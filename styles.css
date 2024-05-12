@@ -109,9 +109,12 @@ footer {
     .hamburger {
         top: 5px; /* Adjusted for mobile */
     }
-    .home-logo {
+     .home-logo {
         top: 5px; /* Adjust to better fit mobile layout */
         left: 10px;
+    }
+    .home-logo img {
+        height: 40px; /* Slightly smaller on mobile devices */
     }
 }
 
@@ -120,4 +123,10 @@ footer {
     left: 20px;
     top: 10px;
     cursor: pointer;
+}
+
+.home-logo img {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
 }
