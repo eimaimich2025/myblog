@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Century', 'Century Gothic', sans-serif;
     font-size: 18px;
@@ -5,13 +6,28 @@ body {
     padding: 0;
     color: #333;
     background-color: #f0faff;
+    background-image: linear-gradient(270deg, transparent, transparent 50%, rgba(211,211,211,0.5) 50%, rgba(211,211,211,0.5) 100%);
+    background-size: 200px 200px;
+    animation: moveBackground 20s linear infinite;
+    background-attachment: fixed; /* This keeps the background fixed during scrolling */
 }
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 400px 0;
+    }
+}
+
 header {
     text-align: center;
     padding: 1rem;
     background-color: #fff;
     position: relative;
 }
+
 .hamburger {
     display: block;
     cursor: pointer;
@@ -21,11 +37,13 @@ header {
     top: 10px;
     color: #000;
 }
+
 nav a {
     margin: 10px;
     text-decoration: none;
     color: #333;
 }
+
 footer {
     font-size: 0.8em;
     color: #666;
@@ -36,6 +54,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 .side-banner {
     height: 100%;
     width: 0;
@@ -47,6 +66,7 @@ footer {
     overflow-x: hidden;
     transition: 0.5s;
 }
+
 .side-banner a {
     padding: 10px 15px;
     text-decoration: none;
@@ -55,6 +75,7 @@ footer {
     display: block;
     transition: 0.3s;
 }
+
 .close-btn {
     position: absolute;
     top: 0;
@@ -62,6 +83,7 @@ footer {
     font-size: 36px;
     margin-left: 50px;
 }
+
 /* Default home-logo settings */
 .home-logo {
     position: absolute;
@@ -69,11 +91,13 @@ footer {
     top: 10px;
     cursor: pointer;
 }
+
 .home-logo img {
     height: 50px;
     width: auto;
     display: block;
 }
+
 /* Media Queries */
 @media (min-width: 768px) {
     body {
@@ -93,18 +117,15 @@ footer {
     header {
         padding: 1.5rem;
     }
-   .home-logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    cursor: pointer;
+    .home-logo {
+        left: 40px;
+        top: 20px;
     }
-.home-logo img {
-    height: 50px; /* Default height for non-mobile */
-    width: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures no extra space around the image */
+    .home-logo img {
+        height: 60px;
+    }
 }
-}
+
 @media (max-width: 767px) {
     body {
         font-size: 14px;
@@ -121,17 +142,11 @@ footer {
         top: 5px;
     }
     .home-logo {
-        position: absolute;
         left: 10px;
-        top: 6px;
-        top: 10px;
-        cursor: pointer;
+        top: 5px;
     }
     .home-logo img {
-        height: 20px;
         height: 30px;
-        width: auto;
-        display: block;
     }
 }
 
