@@ -64,6 +64,7 @@ footer {
     transition: 0.3s;
 }
 
+
 .close-btn {
     position: absolute;
     top: 0;
@@ -108,4 +109,15 @@ footer {
     .hamburger {
         top: 5px; /* Adjusted for mobile */
     }
+    .home-logo {
+        top: 5px; /* Adjust to better fit mobile layout */
+        left: 10px;
+    }
+}
+
+.home-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
 }
