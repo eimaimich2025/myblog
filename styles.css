@@ -83,7 +83,6 @@ footer {
 .home-logo img {
     height: 50px; /* Adjust the size of the logo */
     width: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures no extra space around the image */
 }
 
 /* Media Queries */
@@ -128,7 +127,7 @@ footer {
         left: 10px;
     }
     .home-logo img {
-        height: 20px; /* Reduce the size a bit more */
+        height: 30px; /* Reduce the size a bit more */
     }
 }
 }
