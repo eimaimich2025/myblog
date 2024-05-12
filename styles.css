@@ -102,6 +102,18 @@ footer {
 }
 
 /* Default home-logo settings */
+.home-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.home-logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -123,17 +135,12 @@ footer {
         padding: 1.5rem;
     }
     .home-logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    cursor: pointer;
-}
-
-.home-logo img {
-    height: 50px;
-    width: auto;
-    display: block;
-}
+        left: 40px;
+        top: 20px;
+    }
+    .home-logo img {
+        height: 60px;
+    }
 }
 
 @media (max-width: 767px) {
