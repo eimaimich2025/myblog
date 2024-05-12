@@ -73,6 +73,19 @@ footer {
     margin-left: 50px;
 }
 
+.home-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.home-logo img {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     body {
@@ -120,15 +133,4 @@ footer {
 }
 }
 
-.home-logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    cursor: pointer;
-}
 
-.home-logo img {
-    height: 50px; /* Adjust the size of the logo */
-    width: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures no extra space around the image */
-}
