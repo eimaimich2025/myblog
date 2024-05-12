@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Century', 'Century Gothic', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0faff;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #000;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    font-size: 0.8em;
+    color: #666;
+    background-color: #eee;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Side Banner Styles */
+.side-banner {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.side-banner a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    article {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: left;
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    header {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    article {
+        width: 95%;
+        padding: 10px;
+        font-size: 18px;
+    }
+    header, nav, footer {
+        padding: 1rem;
+    }
+    .hamburger {
+        top: 5px; /* Adjusted for mobile */
+    }
+}
