@@ -103,12 +103,13 @@ footer {
     }
     header {
         padding: 1.5rem;
+    }
    .home-logo {
     position: absolute;
     left: 20px;
     top: 10px;
     cursor: pointer;
-}
+    }
 
 .home-logo img {
     height: 50px; /* Default height for non-mobile */
@@ -134,7 +135,7 @@ footer {
     }
     .home-logo {
         left: 10px;
-        top: 17px;
+        top: 15px;
     }
     .home-logo img {
         height: 30px;
