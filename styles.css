@@ -134,11 +134,15 @@ footer {
         top: 5px;
     }
     .home-logo {
+        position: absolute;
         left: 10px;
         top: 6px;
+        cursor: pointer;
     }
     .home-logo img {
         height: 20px;
+        width: auto;
+        display: block;
     }
 }
 
