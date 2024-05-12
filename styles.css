@@ -73,18 +73,6 @@ footer {
     margin-left: 50px;
 }
 
-.home-logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    cursor: pointer;
-}
-
-.home-logo img {
-    height: 50px; /* Adjust the size of the logo */
-    width: auto; /* Maintains the aspect ratio */
-}
-
 /* Media Queries */
 @media (min-width: 768px) {
     body {
@@ -127,9 +115,21 @@ footer {
         left: 10px;
     }
     .home-logo img {
-        height: 30px; /* Reduce the size a bit more */
+        height: 20px; /* Reduce the size a bit more */
     }
 }
+
+.home-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.home-logo img {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
 }
 
 
