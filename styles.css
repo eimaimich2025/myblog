@@ -136,11 +136,11 @@ footer {
     .home-logo {
         position: absolute;
         left: 10px;
-        top: 6px;
+        top: 10px;
         cursor: pointer;
     }
     .home-logo img {
-        height: 20px;
+        height: 30px;
         width: auto;
         display: block;
     }
