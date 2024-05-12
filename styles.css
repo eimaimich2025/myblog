@@ -103,14 +103,18 @@ footer {
     }
     header {
         padding: 1.5rem;
-    }
-    .home-logo {
-        left: 40px;
-        top: 20px;
-    }
-    .home-logo img {
-        height: 60px;
-    }
+   .home-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.home-logo img {
+    height: 50px; /* Default height for non-mobile */
+    width: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
+}
 }
 
 @media (max-width: 767px) {
@@ -130,7 +134,7 @@ footer {
     }
     .home-logo {
         left: 10px;
-        top: 5px;
+        top: 10px;
     }
     .home-logo img {
         height: 30px;
