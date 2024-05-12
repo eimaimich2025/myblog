@@ -42,7 +42,6 @@ footer {
     width: 100%;
 }
 
-/* Side Banner Styles */
 .side-banner {
     height: 100%;
     width: 0;
@@ -64,13 +63,26 @@ footer {
     transition: 0.3s;
 }
 
-
 .close-btn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+/* Default home-logo settings */
+.home-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.home-logo img {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 /* Media Queries */
@@ -92,6 +104,13 @@ footer {
     header {
         padding: 1.5rem;
     }
+    .home-logo {
+        left: 40px;
+        top: 20px;
+    }
+    .home-logo img {
+        height: 60px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -107,29 +126,15 @@ footer {
         padding: 1rem;
     }
     .hamburger {
-        top: 5px; /* Adjusted for mobile */
+        top: 5px;
     }
     .home-logo {
-        position: relative; /* Ensure it's positioned relative to its normal position */
-        top: -5px; /* Move it up slightly */
         left: 10px;
+        top: 5px;
     }
     .home-logo img {
-        height: 20px; /* Reduce the size a bit more */
+        height: 30px;
     }
-}
-
-.home-logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    cursor: pointer;
-}
-
-.home-logo img {
-    height: 50px; /* Adjust the size of the logo */
-    width: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures no extra space around the image */
 }
 
 
