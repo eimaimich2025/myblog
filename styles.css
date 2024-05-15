@@ -19,7 +19,7 @@ h2 {
     font-size: 1.2rem;
     color: #666;
     margin-top: 0.5rem;
-    font-weight: bold;
+    font-weight: bold; /* This will make the text bold */
 }
 .hamburger {
     display: block;
