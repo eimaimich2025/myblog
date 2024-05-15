@@ -12,7 +12,14 @@ header {
     background-color: #fff;
     position: relative;
 }
-
+h2 {
+    font-size: 1.5rem;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
 .hamburger {
     display: block;
     cursor: pointer;
@@ -63,7 +70,6 @@ footer {
     font-size: 36px;
     margin-left: 50px;
 }
-/* Default home-logo settings */
 .home-logo {
     position: absolute;
     left: 20px;
@@ -94,17 +100,6 @@ footer {
     header {
         padding: 1.5rem;
     }
-   .home-logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    cursor: pointer;
-    }
-.home-logo img {
-    height: 50px; /* Default height for non-mobile */
-    width: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures no extra space around the image */
-}
 }
 @media (max-width: 767px) {
     body {
@@ -125,14 +120,12 @@ footer {
         position: absolute;
         left: 10px;
         top: 6px;
-        top: 10px;
-        cursor: pointer;
     }
     .home-logo img {
-        height: 20px;
         height: 30px;
         width: auto;
         display: block;
     }
 }
+
 
