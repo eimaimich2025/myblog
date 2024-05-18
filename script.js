@@ -60,7 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false // This makes the chart container responsive
         }
     });
+
+    // Adjust the height of the chart
+    document.getElementById('povertyChart').style.height = '600px'; // Adjust the value as needed
 });
+
