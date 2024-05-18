@@ -12,7 +12,7 @@ function closeBanner() {
 document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.getElementById('povertyChart').getContext('2d');
     const povertyChart = new Chart(ctx, {
-        type: 'line', // Chart type specified here
+        type: 'line',
         data: {
             labels: ['1960', '1961', '1962', '1963', '1964', '1965', '1966', '1967', '1968', '1969',
                      '1970', '1971', '1972', '1973', '1974', '1975', '1976', '1977', '1978', '1979',
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 tension: 0.1
             }]
         },
-        options: { // Moved inside the correct scope
+        options: {
             scales: {
                 y: {
-                    beginAtZero: true // Appropriate for y-axis
+                    beginAtZero: true
                 }
             },
             plugins: {
