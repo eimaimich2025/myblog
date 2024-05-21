@@ -8,8 +8,34 @@ function closeBanner() {
     banner.style.width = '0';
 }
 
-// Chart.js code
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('header').classList.toggle('dark-mode');
+    document.querySelector('footer').classList.toggle('dark-mode');
+    document.querySelector('article').classList.toggle('dark-mode');
+    document.querySelectorAll('nav a').forEach(link => {
+        link.classList.toggle('dark-mode');
+    });
+
+    // Save the preference to localStorage
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+// Load the preference from localStorage
 document.addEventListener('DOMContentLoaded', function() {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        document.querySelector('header').classList.add('dark-mode');
+        document.querySelector('footer').classList.add('dark-mode');
+        document.querySelector('article').classList.add('dark-mode');
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.add('dark-mode');
+        });
+    }
+
+    // Chart.js code
     const ctx = document.getElementById('povertyChart').getContext('2d');
     const povertyChart = new Chart(ctx, {
         type: 'line',
@@ -60,11 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             responsive: true,
-            maintainAspectRatio: false // This makes the chart container responsive
+            maintainAspectRatio: false
         }
     });
 
-    // Adjust the height of the chart
-    document.getElementById('povertyChart').style.height = '600px'; // Adjust the value as needed
+    document.getElementById('povertyChart').style.height = '600px';
 });
-
