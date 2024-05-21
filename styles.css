@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Century', 'Century Gothic', sans-serif;
     font-size: 18px;
@@ -108,6 +107,22 @@ article.dark-mode {
     width: auto;
     display: block;
 }
+#darkModeToggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+#darkModeToggle.dark-mode {
+    background-color: #fff;
+    color: #000;
+}
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -155,6 +170,7 @@ article.dark-mode {
         display: block;
     }
 }
+
 
 
 
