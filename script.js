@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('nav a').forEach(link => {
             link.classList.add('dark-mode');
         });
+        document.getElementById('darkModeSwitch').checked = true; // Set the checkbox to checked state
     }
 
     // Chart.js code
@@ -95,3 +96,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Attach the toggleDarkMode function to the dark mode switch
 document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
+
