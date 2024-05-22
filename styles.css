@@ -118,6 +118,7 @@ article.dark-mode {
     bottom: 20px;
     width: 60px;
     height: 34px;
+    z-index: 1000; /* Ensure it is on top of other elements */
 }
 
 .dark-mode-toggle input {
@@ -133,9 +134,10 @@ article.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000;
+    background-color: #ccc;
     transition: .4s;
     border-radius: 34px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Add a shadow for better visibility */
 }
 
 .slider:before {
@@ -148,10 +150,11 @@ article.dark-mode {
     background-color: white;
     transition: .4s;
     border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Add a shadow for better visibility */
 }
 
 input:checked + .slider {
-    background-color: #fff;
+    background-color: #2196F3; /* Blue color for checked state */
 }
 
 input:checked + .slider:before {
@@ -204,6 +207,7 @@ input:checked + .slider:before {
         display: block;
     }
 }
+
 
 
 
