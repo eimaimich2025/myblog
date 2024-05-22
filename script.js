@@ -92,3 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('povertyChart').style.height = '600px';
 });
+
+// Attach the toggleDarkMode function to the dark mode switch
+document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
