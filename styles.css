@@ -134,7 +134,7 @@ article.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #000; /* Black background */
     transition: .4s;
     border-radius: 34px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Add a shadow for better visibility */
@@ -147,14 +147,14 @@ article.dark-mode {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: white; /* White dot */
     transition: .4s;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Add a shadow for better visibility */
 }
 
 input:checked + .slider {
-    background-color: #2196F3; /* Blue color for checked state */
+    background-color: #000; /* Ensure the background remains black when checked */
 }
 
 input:checked + .slider:before {
@@ -207,9 +207,6 @@ input:checked + .slider:before {
         display: block;
     }
 }
-
-
-
 
 
 
