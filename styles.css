@@ -115,7 +115,7 @@ article.dark-mode {
 .dark-mode-toggle {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 7px; /* Adjust this value to ensure it's at the bottom */
     width: 60px;
     height: 34px;
     z-index: 1000; /* Ensure it is on top of other elements */
@@ -207,6 +207,5 @@ input:checked + .slider:before {
         display: block;
     }
 }
-
 
 
