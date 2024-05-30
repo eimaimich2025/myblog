@@ -22,7 +22,24 @@ function toggleDarkMode() {
     localStorage.setItem('darkMode', isDarkMode);
 }
 
- // Chart.js code
+document.addEventListener('DOMContentLoaded', function() {
+    // Load the preference from localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        document.querySelector('header').classList.add('dark-mode');
+        document.querySelector('footer').classList.add('dark-mode');
+        document.querySelector('article').classList.add('dark-mode');
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.add('dark-mode');
+        });
+        document.getElementById('darkModeSwitch').checked = true; // Set the checkbox to checked state
+    }
+
+    // Attach the toggleDarkMode function to the dark mode switch
+    document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
+
+    // Chart.js code
     const ctx = document.getElementById('povertyChart').getContext('2d');
     const povertyChart = new Chart(ctx, {
         type: 'line',
@@ -79,22 +96,3 @@ function toggleDarkMode() {
 
     document.getElementById('povertyChart').style.height = '600px';
 });
-
-// Load the preference from localStorage
-document.addEventListener('DOMContentLoaded', function() {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-        document.querySelector('header').classList.add('dark-mode');
-        document.querySelector('footer').classList.add('dark-mode');
-        document.querySelector('article').classList.add('dark-mode');
-        document.querySelectorAll('nav a').forEach(link => {
-            link.classList.add('dark-mode');
-        });
-        document.getElementById('darkModeSwitch').checked = true; // Set the checkbox to checked state
-    }
-
-
-// Attach the toggleDarkMode function to the dark mode switch
-document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
-
