@@ -16,6 +16,9 @@ function toggleDarkMode() {
     document.querySelectorAll('nav a').forEach(link => {
         link.classList.toggle('dark-mode');
     });
+    document.querySelectorAll('.article-box').forEach(box => {
+        box.classList.toggle('dark-mode');
+    });
 
     // Save the preference to localStorage
     const isDarkMode = document.body.classList.contains('dark-mode');
@@ -32,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('article').classList.add('dark-mode');
         document.querySelectorAll('nav a').forEach(link => {
             link.classList.add('dark-mode');
+        });
+        document.querySelectorAll('.article-box').forEach(box => {
+            box.classList.add('dark-mode');
         });
         document.getElementById('darkModeSwitch').checked = true; // Set the checkbox to checked state
     }
@@ -96,3 +102,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('povertyChart').style.height = '600px';
 });
+
