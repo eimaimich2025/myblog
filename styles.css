@@ -254,6 +254,3 @@ input:checked + .slider:before {
         height: auto; /* Adjusted for mobile view */
     }
 }
-
-
-
