@@ -1,4 +1,5 @@
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,26 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="home-logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/2549/2549900.png" alt="Logo">
-        </a> <!-- Logo image included here -->
-        <div class="hamburger" onclick="toggleBanner()">☰</div>
-        Personal Philosophy
+        <h1 id="main-title"><span id="dynamic-word" class="typing">History</span></h1>
+        <nav>
+            <a href="#home" data-title="Ideas">Home</a>
+            <a href="article1.html" data-title="Economics">Economics</a>
+            <a href="secondpage.html" data-title="History">History</a>
+            <a href="secondpage.html" data-title="Technology">Technology</a>
+            <a href="secondpage.html" data-title="Politics">Politics</a>
+            <a href="secondpage.html" data-title="Religion">Religion</a>
+            <a href="secondpage.html" data-title="Culture">Culture</a>
+        </nav>
     </header>
-    <nav>
-        <div class="side-banner" id="mySideBanner">
-            <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="article1.html">Economics</a>
-            <a href="secondpage.html">World History</a>
-            <a href="secondpage.html">Technology</a>
-            <a href="secondpage.html">Ethics</a>
-        </div>
-    </nav>
     <article>
-        <h2> History of the whole world</h2>
-        <p> Recently, meaning in the past five centuries, we as humannity have witnessed a fire. First ignited by the greeks, philosophy, science, drama, free expression grew rapidly. Then the flame was supressed in humannity's rebeillious adolecent years, the medeval ages, years we spent building torture devices, seige equipment and piously worshiping god rather than accumulating knowledge about the natural world. But in 1500 in Italy, some people were up to some interesting things and mechants and the rise of the middle class gave way to new economic innovations. These city states, which valued private property and free trade, then became the starting point of the renaissance or rebirth of humanity's vitality. Art, culture, science and commerce were booming. A chain recation was set off, where better technology meant that people had the capacity to trade with people from all around the world. In doing so, the spread ideas and new ways of producing more goods and services, which enabled more people to specialize, which lead to more productivity growth, created a positively reenforcing spiral that continues to this day. (</p>
+        <h2>History of the Whole World</h2>
+        <p>Recently, meaning in the past five centuries, we as humanity have witnessed a fire. First ignited by the Greeks, philosophy, science, drama, and free expression grew rapidly. Then the flame was suppressed in humanity's rebellious adolescent years, the medieval ages, years we spent building torture devices, siege equipment, and piously worshiping God rather than accumulating knowledge about the natural world. But in 1500 in Italy, some people were up to some interesting things and merchants and the rise of the middle class gave way to new economic innovations. These city-states, which valued private property and free trade, then became the starting point of the Renaissance or rebirth of humanity's vitality. Art, culture, science, and commerce were booming. A chain reaction was set off, where better technology meant that people had the capacity to trade with people from all around the world. In doing so, the spread of ideas and new ways of producing more goods and services, which enabled more people to specialize, which led to more productivity growth, created a positively reinforcing spiral that continues to this day.</p>
     </article>
-    <footer>
-        © 2024 Eric Imai Philosophy. All rights reserved.
-    </footer>
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeSwitch">
+        <label for="darkModeSwitch" class="slider"></label>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
+
