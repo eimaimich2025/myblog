@@ -65,6 +65,7 @@ footer {
     padding: 1rem;
     text-align: center;
     transition: background-color 0.5s, color 0.5s;
+    margin-top: auto;
 }
 footer.dark-mode {
     background-color: #1c1c1c;
