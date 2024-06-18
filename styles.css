@@ -10,10 +10,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 body.dark-mode {
     background-color: #121212;
     color: #f0faff;
 }
+
 header {
     text-align: center;
     padding: 2rem;
@@ -22,9 +24,11 @@ header {
     position: relative;
     transition: background-color 0.5s, color 0.5s;
 }
+
 header.dark-mode {
     background-color: #1c1c1c;
 }
+
 h1.typing {
     font-size: 2.5rem;
     white-space: nowrap;
@@ -32,20 +36,24 @@ h1.typing {
     border-right: .15em solid orange;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
+
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
 }
+
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: orange; }
 }
+
 nav {
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
+
 nav a {
     padding: 10px 15px;
     text-decoration: none;
@@ -54,13 +62,16 @@ nav a {
     border-radius: 5px;
     transition: background-color 0.5s, transform 0.3s;
 }
+
 nav a:hover {
     background-color: #555;
     transform: scale(1.1);
 }
+
 nav a.dark-mode {
     color: #f0faff;
 }
+
 article {
     background-color: #fff;
     transition: background-color 0.5s, color 0.5s;
@@ -70,10 +81,12 @@ article {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
 article.dark-mode {
     background-color: #1c1c1c;
     color: #f0faff;
 }
+
 .featured-articles {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +94,7 @@ article.dark-mode {
     margin: 40px auto;
     width: 80%;
 }
+
 .article-box {
     flex: 1 1 calc(33% - 20px);
     margin: 10px;
@@ -93,14 +107,17 @@ article.dark-mode {
     position: relative;
     cursor: pointer;
 }
+
 .article-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .article-box.dark-mode {
     background-color: #1c1c1c;
     color: #f0faff;
 }
+
 .article-box .content {
     position: absolute;
     top: 50%;
@@ -109,15 +126,18 @@ article.dark-mode {
     text-align: center;
     color: #fff;
 }
+
 .article-box .content h3 {
     margin: 0;
     font-size: 1.5rem;
 }
+
 @media (max-width: 768px) {
     .article-box {
         flex: 1 1 100%;
     }
 }
+
 .dark-mode-toggle {
     position: fixed;
     right: 20px;
@@ -126,11 +146,13 @@ article.dark-mode {
     height: 34px;
     z-index: 1000;
 }
+
 .dark-mode-toggle input {
     opacity: 0;
     width: 0;
     height: 0;
 }
+
 .slider {
     position: absolute;
     cursor: pointer;
@@ -143,6 +165,7 @@ article.dark-mode {
     border-radius: 34px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
 .slider:before {
     position: absolute;
     content: "";
@@ -155,10 +178,13 @@ article.dark-mode {
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
 input:checked + .slider {
     background-color: #000;
 }
+
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
 
