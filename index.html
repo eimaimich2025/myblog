@@ -3,75 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undersea Tech Talk - Explore Technology Beneath the Waves</title>
+    <title>Eric's World of Ideas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <a href="index.html" class="home-logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/2549/2549900.png" alt="Logo">
-        </a>
-        <div class="hamburger" onclick="toggleBanner()">☰</div>
-        Personal Philosophy
-    </header>
-    <nav>
-        <div class="side-banner" id="mySideBanner">
-            <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a>
+        <h1 class="typing">Welcome to Eric's World of Ideas</h1>
+        <nav>
             <a href="#home">Home</a>
             <a href="article1.html">Economics</a>
             <a href="secondpage.html">World History</a>
             <a href="secondpage.html">Technology</a>
             <a href="secondpage.html">Ethics</a>
-        </div>
-    </nav>
+            <a href="secondpage.html">Ideas</a>
+        </nav>
+    </header>
     <article>
         <h2>Welcome to My Personal Philosophy Blog</h2>
         <p>Hello dear reader. This blog outlines history, economics, technology, moral principles, and a vision for the future. Enjoy reading about business ideas, stories, and predictions for what the future holds for humanity.</p>
     </article>
-
     <section class="featured-articles">
-        <div class="article-box">
-            <a href="article1.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/3310/3310764.png" alt="Featured Article 1">
-                <h3> Economics </h3>
-            </a>
+        <div class="article-box" onclick="location.href='article1.html'">
+            <div class="content">
+                <h3>Economics</h3>
+            </div>
         </div>
-        <div class="article-box">
-            <a href="secondpage.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/16468/16468908.png" alt="Featured Article 2">
-                <h3> History </h3>
-            </a>
+        <div class="article-box" onclick="location.href='secondpage.html'">
+            <div class="content">
+                <h3>World History</h3>
+            </div>
         </div>
-        <div class="article-box">
-            <a href="secondpage.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/780/780477.png" alt="Featured Article 3">
-                <h3> Technology 3</h3>
-            </a>
+        <div class="article-box" onclick="location.href='secondpage.html'">
+            <div class="content">
+                <h3>Technology</h3>
+            </div>
         </div>
-        <div class="article-box">
-            <a href="secondpage.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/16398/16398477.png" alt="Featured Article 4">
-                <h3> Morality </h3>
-            </a>
+        <div class="article-box" onclick="location.href='secondpage.html'">
+            <div class="content">
+                <h3>Morality</h3>
+            </div>
         </div>
-        <div class="article-box">
-            <a href="secondpage.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/702/702814.png" alt="Featured Article 5">
-                <h3> Ideas</h3>
-            </a>
+        <div class="article-box" onclick="location.href='secondpage.html'">
+            <div class="content">
+                <h3>Ideas</h3>
+            </div>
         </div>
     </section>
-
     <footer>
         © 2024 Eric Imai Blog All rights reserved.
     </footer>
-
     <div class="dark-mode-toggle">
         <input type="checkbox" id="darkModeSwitch">
         <label for="darkModeSwitch" class="slider"></label>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
+
 
