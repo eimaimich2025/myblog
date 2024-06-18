@@ -1,7 +1,6 @@
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     document.querySelector('header').classList.toggle('dark-mode');
-    document.querySelector('footer').classList.toggle('dark-mode');
     document.querySelector('article').classList.toggle('dark-mode');
     document.querySelectorAll('nav a').forEach(link => {
         link.classList.toggle('dark-mode');
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
         document.querySelector('header').classList.add('dark-mode');
-        document.querySelector('footer').classList.add('dark-mode');
         document.querySelector('article').classList.add('dark-mode');
         document.querySelectorAll('nav a').forEach(link => {
             link.classList.add('dark-mode');
