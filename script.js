@@ -30,3 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
 });
+
