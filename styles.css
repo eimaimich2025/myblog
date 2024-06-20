@@ -144,7 +144,7 @@ article.dark-mode {
     }
 
     h1.typing {
-        font-size: 1.5rem; /* Smaller font size for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
         white-space: normal; /* Allow text to wrap */
     }
 }
