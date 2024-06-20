@@ -2,16 +2,19 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
     color: #333;
     background-color: #f0faff;
     transition: background-color 0.5s, color 0.5s;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 body.dark-mode {
@@ -38,9 +41,6 @@ h1.typing {
     overflow: hidden;
     border-right: .15em solid orange;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-    display: inline-block; /* Ensure it's treated as an inline element */
-    max-width: 100%; /* Prevents overflow */
-    white-space: nowrap; /* Prevents text wrapping */
 }
 
 @keyframes typing {
@@ -142,6 +142,11 @@ article.dark-mode {
     .article-box {
         flex: 1 1 100%;
     }
+
+    h1.typing {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        white-space: normal; /* Allow text to wrap */
+    }
 }
 
 .dark-mode-toggle {
@@ -192,6 +197,7 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
 
 
 
