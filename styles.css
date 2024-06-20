@@ -53,6 +53,13 @@ h1.typing {
     50% { border-color: orange; }
 }
 
+@media (max-width: 768px) {
+    h1.typing {
+        font-size: 1.5rem; /* Adjust the font size for mobile */
+        animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Adjust the steps for smoother animation on mobile */
+    }
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -142,11 +149,6 @@ article.dark-mode {
     .article-box {
         flex: 1 1 100%;
     }
-
-    h1.typing {
-        font-size: 1rem; /* Smaller font size for mobile */
-        white-space: normal; /* Allow text to wrap */
-    }
 }
 
 .dark-mode-toggle {
@@ -197,6 +199,7 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
 
 
 
