@@ -93,6 +93,13 @@ article {
     width: 80%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    font-size: 16px; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    article {
+        font-size: 14px; /* Adjust the font size for articles on mobile */
+    }
 }
 
 article.dark-mode {
@@ -213,10 +220,3 @@ input:checked + .slider:before {
 .moon-icon {
     margin-left: 8px;
 }
-
-
-
-
-
-
-
